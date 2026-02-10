@@ -1,6 +1,7 @@
 "use client"
 
 import scrollToId from "@/utils/scrollToId";
+import reportConversion from "@/utils/trackGoogleAnalytics";
 import Link from "next/link";
 
 export default function Page() {
@@ -198,6 +199,7 @@ export default function Page() {
           </p>
 
           <Link target="_blank"
+            onClick={reportConversion}
             href="https://pay.cakto.com.br/pqhdt9i_760243"
             className="mt-9 inline-flex items-center justify-center rounded-full bg-[#69775a] px-10 py-4 text-base font-semibold text-[#faf8f2] shadow-md shadow-[#69775a]/20 transition hover:-translate-y-0.5 hover:bg-[#5c6a4e]"
           >
